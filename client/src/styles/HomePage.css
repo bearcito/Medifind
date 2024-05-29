@@ -30,14 +30,17 @@ body {
 }
 
 .hero h2 {
+
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 0.8em;
+    padding: 0 100px;
+    font-size: 1em;
     line-height: 1.5;
     margin-bottom: 40px;
+    text-justify: distribute-all-lines;
 }
 
 .hero button {
@@ -54,11 +57,14 @@ body {
 }
 
 .stats {
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 40px;
 }
 
 .stat {
+    width: 300px;
     text-align: center;
 }
 
