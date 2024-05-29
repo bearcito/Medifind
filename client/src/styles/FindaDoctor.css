@@ -1,0 +1,88 @@
+/* FindaDoctor.css */
+
+.find-doctor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px; /* Añade espacio para el navbar */
+}
+
+.find-doctor-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.search-bar-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.search-bar-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.doctors-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.doctor-card-container {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    width: 200px; /* Ajusta el ancho de las tarjetas */
+    height: 300px; /* Ajusta la altura de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-card-image-container {
+    flex: 0 0 70%;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.doctor-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-card-content {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.doctor-card-name {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.doctor-card-speciality {
+    font-size: 16px;
+    color: #666;
+}

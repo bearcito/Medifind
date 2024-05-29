@@ -1,0 +1,87 @@
+/* DoctorDetails.css */
+
+.doctor-details-container {
+    display: flex;
+    height: 100vh;
+    padding-top: 60px; /* Añade espacio para el navbar */
+    box-sizing: border-box;
+}
+
+.doctor-details-left,
+.doctor-details-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.doctor-details-left {
+    background-color: #f0f2f5;
+    text-align: center;
+    height: 100%;
+}
+
+.doctor-details-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-details-right {
+    background-color: #fff;
+    text-align: left;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.doctor-details-content {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+.doctor-details-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.doctor-details-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.doctor-details-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.doctor-details-content a:hover {
+    background-color: #0056b3;
+}
+
+.doctor-details-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.doctor-details-content button:hover {
+    background-color: #218838;
+}

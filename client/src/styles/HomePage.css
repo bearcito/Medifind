@@ -1,0 +1,72 @@
+/* HomePage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.App {
+    position: absolute;
+    top: 80px;
+    /* Ajusta la posición de todo el contenido para estar debajo del navbar */
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    /* Ajusta la altura mínima para tener en cuenta el navbar */
+    top: -60px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 70vh;
+    /* Ajusta la altura según sea necesario */
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    background-color: #75a5d9;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #007bff;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 1.2em;
+}
+
+.stat p {
+    font-size: 1em;
+    line-height: 1.5;
+}

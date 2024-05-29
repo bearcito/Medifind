@@ -1,11 +1,120 @@
-.form-container {
+/* styles/RegiserStyles.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.auth-page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.auth-image {
+  flex: 1;
+  background: url('https://b282c5de4f50ed30d5ce-25e9f6b52714e6c3d4dbb7e330152014.ssl.cf3.rackcdn.com/immagegrabber_thumb_big/Unsplash-Yui-VjmS8AA.jpg') no-repeat center center/cover;
+}
+
+.auth-form-container {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  background-color: #f0f2f5;
+  position: relative;
+  transition: transform 0.6s ease-in-out;
+  overflow: hidden;
 }
 
-.register-form {
-  border: 1px solid gray;
-  padding: 30px;
+.auth-form {
+  width: 80%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-center {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ant-form-item-label > label {
+  color: #555;
+}
+
+.ant-form-item {
+  margin-bottom: 15px;
+}
+
+.ant-input,
+.ant-select-selector {
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1890ff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #40a9ff;
+}
+
+.m-2 {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.m-2:hover {
+  text-decoration: underline;
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.6s forwards;
+}
+
+.slide-out-right {
+  animation: slide-out-right 0.6s forwards;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
